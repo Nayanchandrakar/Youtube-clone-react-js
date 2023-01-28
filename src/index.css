@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+.mini_nav{
+flex-direction: column;
+align-items: center;
+padding:.8rem 0;
+gap: .3rem;
+}
+
+.mini_nav span{
+    font-size: .6rem;
+}
+
+.navres1{
+    left: 6rem;
+}
+
+.navres2{
+    left: 16rem;
+}
+
+.gridcolums-2{
+    grid-template-columns: 3rem 12rem;
+}
+
+.zoomeffect{
+    transition: transform .2s;
+    transition-delay: .1s;
+}
+
+.zoomeffect:hover{
+    transform: scale(1.18);
+}
+
+.search_grid{
+    grid-template-columns:30% 55% 15%;
+}
+
+.search_video_grid{
+    grid-template-columns:30% 70%;
+}
+
+.playlist{
+    width:35% ;
+    height: 100%;
+}
+
+.grid_two80_20{
+   grid-template-columns: 80% 20%;
+}
+
+.row_gap{
+  row-gap: 1.2rem;  
+}
+
+/* ###############################
+scroll bar modification
+############################### */
+
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+    height: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }  
+
+
+.scrollbarhide::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+}
+
+/* ################################### */
+
+
+
+.width10rem{
+    width: 6rem;
+}
+.width22rem{
+    width: 22rem;
+}
+.width28rem{
+    width: 28rem;
+}
+
+
+
+/* auto grid layout code */
+.auto-grid{
+    grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
+}
+
+.cu-player-grid{
+    grid-template-columns: 65% 35%;
+}
+
+
+/* responsive code */
+.custom_grid{
+    grid-template-columns: 33% 60%;
+    gap: 1rem;
+}
